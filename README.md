@@ -22,17 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
 
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** marakeby, pnet_prostate_paper, twitter_handle, email, P-NET, project_description
--->
+
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -82,25 +72,13 @@ Biologically informed deep learning for explainable epigenetic clocks
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/marakeby/pnet_prostate_paper.git
+   git clone https://github.com/Paureel/XAI-AGE.git
    ```
 2. Create conda environment
    ```sh
-   conda env create --name pnet_env --file=environment.yml
+   conda env create --name age_env --file=environment.yml
    ```
-3. Based on your use, you may need to download one or more of the following
 
-   a. [Data files](https://drive.google.com/uc?id=17nssbdUylkyQY1ebtxsIw5UzTAd0zxWb&export=download) (needed to retrain
-   models and generate figures). Extract the files under ```_database``` directory. If you like to store it somewhere
-   else, you may need to set the ```DATA_PATH``` variable in ```config_path.py``` accordingly.
-
-   b. [Log files](https://drive.google.com/uc?id=18dJ5fWvJyISROkLRCUMfhsrwZ_iNXSNP&export=download) (needed to
-   regenerate paper figures). Extract the files under ```_logs``` directory. If you like to store it somewhere else, you
-   may need to set the ```LOG_PATH``` variable in ```config_path.py``` accordingly.
-
-   c. [Plots files](https://drive.google.com/uc?id=1DiZB8qvZqVXs9HyDCF7bCFOr_T1ER7Ku&export=download) (a copy of the
-   paper images). Extract the files under ```_plots``` directory. If you like to store it somewhere else, you may need
-   to set the ```PLOTS_PATH``` variable in ```config_path.py``` accordingly.
 
 <!-- USAGE EXAMPLES -->
 
@@ -108,7 +86,7 @@ Biologically informed deep learning for explainable epigenetic clocks
 
 1. Activate the created conda environment
    ```sh
-   source activate pnet_env
+   source activate age_env
    ```
 2. Add the current diretory to PYTHONPATH, e.g.
 

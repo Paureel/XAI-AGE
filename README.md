@@ -1,26 +1,3 @@
-<!--
-MIT License
-
-Copyright (c) 2018 Othneil Drew
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
 
 
 
@@ -33,10 +10,7 @@ SOFTWARE.
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
+      
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#References">References</a></li>
@@ -52,14 +26,13 @@ SOFTWARE.
 
 ## About The Project
 
-<p align="center">
-  <a href="https://github.com/marakeby/pnet_prostate_paper">
-    <img src="_plots/screenshot.png" alt="Logo" width="900" height="300">
-  </a>
-  </p>
 
 
-Biologically informed deep learning for explainable epigenetic clocks
+**Biologically informed deep learning for explainable epigenetic clocks**
+
+Aging is defined by steady buildup of damage and is a risk factor for chronic diseases. Epigenetic mechanisms like DNA methylation may play a role in organismal aging, but whether they are active drivers or consequences is unknown. Epigenetic clocks, based on DNA methylation, accurately determine a person's biological age. In the past years, a number of accurate epigenetic clocks were developed, and their function and an overview of the field is summarized by Seale et al.. 
+         
+Here we present **XAI-AGE**, which is a biologically informed, explainable deep neural network model for accurate biological age prediction across many tissues. We show that this approach can identify differentially activated pathways and biological processes from the latent layers of the neural network, and is based on a recently published explainable model used in cancer research, called PNET by Elmarakeby et al.. 
 
 <!-- GETTING STARTED -->
 
@@ -88,40 +61,14 @@ Biologically informed deep learning for explainable epigenetic clocks
    ```sh
    source activate age_env
    ```
-2. Add the current diretory to PYTHONPATH, e.g.
 
-   ```sh
-   export PYTHONPATH=~/pnet_prostate_paper:$PYTHONPATH
-   ```
-
-3. To generate all paper figures, run
-     ```sh
-   cd ./analysis
-   python run_it_all.py
-   ```
-
-4. To generate individual paper figure run the different files under the 'analysis' directory, e.g.
-     ```sh
-   cd ./analysis
-   python figure_1_d_auc_prc.py
-   ```
-   For ```Figure3``` , make sure you run ```prepare_data.py``` before running other files
-5. To re-train a model from scratch run
-   ```sh
-   cd ./train
-   python run_me.py
-   ```
-   This will run an experiment 'pnet/onsplit_average_reg_10_tanh_large_testing' which trains a P-NET model on a
-   training-testing data split of Armenia et al data set and compare it to a simple logistic regression model. The
-   results of the experiment will be stored under ```_logs```in a directory with the same name as the experiment.  
-   To run another experiment, you may uncomment one of the lines in the run_me.py to run the corresponding experiment.
-   Note that some models especially cross validation experiments may be time consuming.
+2. Follow the instructions in the make_individual_predictions.ipynb file.
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the GPL-2.0 License License. See `LICENSE` for more information.
+Distributed under the GPL-2.0 License License. The changed files compared to the original PNET publication was marked in every affected files.
 
 
 
@@ -129,21 +76,18 @@ Distributed under the GPL-2.0 License License. See `LICENSE` for more informatio
 
 ## Contact
 
-Haitham - [@HMarakeby](https://twitter.com/HMarakeby)
 
-Project Link: [https://github.com/marakeby/pnet_prostate_paper](https://github.com/marakeby/pnet_prostate_paper)
+Project Link: [https://github.com/Paureel/XAI-AGE](https://github.com/Paureel/XAI-AGE)
 
 
 <!-- References -->
 
 ## References
 * Elmarakeby H, et al. "Biologically informed deep neural network for prostate cancer classification and discovery." Nature. Online September 22, 2021. DOI: 10.1038/s41586-021-03922-4
-* Armenia, Joshua, et al. "The long tail of oncogenic drivers in prostate cancer." Nature genetics 50.5 (2018): 645-651.
-* Robinson, Dan R., et al. "Integrative clinical genomics of metastatic cancer." Nature 548.7667 (2017): 297-303.
-* Fraser, Michael, et al. "Genomic hallmarks of localized, non-indolent prostate cancer." Nature 541.7637 (2017):
-  359-364.
+* Seale et al. "Making sense of the ageing methylome",Nature Reviews Genetics, DOI:10.1038/s41576-022-00477-6
+
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
-This work was supported in part by the Fund for Innovation in Cancer Informatics, Mark Foundation, Prostate Cancer Foundation, Movember, and the National Cancer Institute at the National Institutes of Health.
+Funded by the MILAB Artificial Intelligence National Laboratory Program of the Ministry of Innovation and Technology from the National Research, Development and Innovation Fund.

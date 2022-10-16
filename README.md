@@ -67,7 +67,7 @@ Here we present **XAI-AGE**, which is a biologically informed, explainable deep
 
 ## License
 
-Distributed under the GPL-2.0 License License. The changed files compared to the original PNET publication was marked in every affected files.
+Distributed under the GPL-2.0 License. The changed files compared to the original PNET publication was marked in every affected files.
 
 
 

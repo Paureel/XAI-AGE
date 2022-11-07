@@ -50,6 +50,9 @@ Here we present **XAI-AGE**, which is a biologically informed, explainable deep
    ```sh
    conda env create --name age_env --file=environment.yml
    ```
+   
+3. Download the remaining files from: 
+Dropbox link
 
 
 <!-- USAGE EXAMPLES -->

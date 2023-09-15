@@ -215,7 +215,7 @@ def get_response():
 # complete_features: make sure all the data_types have the same set of features_processing (genes)
 def combine(x_list, y_list, rows_list, cols_list, data_type_list, combine_type, use_coding_genes_only=False):
     cols_list_set = [set(list(c)) for c in cols_list]
-    print(cols_list_set)
+    #print(cols_list_set)
     if combine_type == 'intersection':
         cols = set.intersection(*cols_list_set)
     else:
@@ -259,8 +259,8 @@ def combine(x_list, y_list, rows_list, cols_list, data_type_list, combine_type, 
     y = y.values
     cols = all_data.columns
     rows = all_data.index
-    print(x)
-    print(y)
+    #print(x)
+    #print(y)
     logging.info(
         'After combining, loaded data %d samples, %d variables, %d responses ' % (x.shape[0], x.shape[1], y.shape[0]))
 

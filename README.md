@@ -49,6 +49,8 @@ Here we present **XAI-AGE**, which is a biologically informed, explainable deep
 2. Create conda environment
    ```sh
    conda env create --name age_env --file=environment.yml
+   conda install -c anaconda ipykernel
+   python -m ipykernel install --user --name=age_env
    ```
    
 3. Download the remaining files from: 

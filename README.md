@@ -68,6 +68,8 @@ Dropbox link: https://www.dropbox.com/scl/fi/ni9frchnalyw9c9fj7xco/_database.zip
 
 2. Follow the instructions in the make_individual_predictions.ipynb file.
 
+3. Generate the Sankey diagram with the generate_sankey.ipynb file.
+
 <!-- LICENSE -->
 
 ## License

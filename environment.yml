@@ -33,7 +33,7 @@ dependencies:
       - lifelines==0.19.5
       - matplotlib==2.2.4
       - psutil==5.8.0
-      - networkx==2.2
+      - networkx==1.11
       - pyvis==0.1.7.0
       - requests==2.23.0
       - rope==0.18.0

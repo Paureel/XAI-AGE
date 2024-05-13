@@ -33,6 +33,8 @@ Aging is defined by steady buildup of damage and is a risk factor for chronic di
          
 Here we present **XAI-AGE**, which is a biologically informed, explainable deep neural network model for accurate biological age prediction across many tissues. We show that this approach can identify differentially activated pathways and biological processes from the latent layers of the neural network, and is based on a recently published explainable model used in cancer research, called PNET by Elmarakeby et al.. 
 
+Important: an updated version of the model, developed with pytorch and python 3 is available here (work in progress, continuously updated): https://github.com/Paureel/pnet.
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
